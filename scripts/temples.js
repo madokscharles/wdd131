@@ -1,13 +1,14 @@
 // Responsive Navigation (Hamburger Menu)
 const hamburger = document.querySelector('#hamburger');
-const menu = document.querySelector('#menu');
+const menu = document.querySelector('nav');
 
+// Toggle menu visibility on hamburger click
 hamburger.addEventListener('click', () => {
-  menu.classList.toggle('hidden');
-  hamburger.textContent = menu.classList.contains('hidden') ? '☰' : '✖';
+  menu.classList.toggle('visible'); // Toggle the visibility of the menu
+  hamburger.textContent = menu.classList.contains('visible') ? '✖' : '☰'; // Change button text
 });
 
-// Update to Footer Date
+// Footer Date
 const yearElement = document.querySelector('#year');
 const lastModifiedElement = document.querySelector('#lastModified');
 
