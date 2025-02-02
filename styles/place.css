@@ -49,6 +49,13 @@ h2 {
     width: 50px;
 }
 
+.weather::after {
+    content: "⛅";
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 1.5em;
+}
+
 footer {
     text-align: center;
     margin-top: 20px;
