@@ -1,0 +1,40 @@
+/* Larger Screen Styles */
+header {
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 2rem;
+}
+
+#album {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #007bff;
+  color: white;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Media Query for Large Screens */
+@media (min-width: 768px) {
+  /* Show menu items horizontally on larger screens */
+  nav ul {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  /* Hide the hamburger button on larger screens */
+  button#hamburger {
+    display: none;
+  }
+}

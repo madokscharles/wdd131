@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Picture Album Enhancement</title>
+    <meta name="description" content="A picture album of sacred temples created by Madokuboba Dokubo, showcasing beautiful architecture and spiritual significance.">
+    <meta name="author" content="Madokuboba Dokubo">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="(min-width: 768px)">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    
+    <script defer src="scripts/filtered-temples.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Picture Album</h1>
+        <button id="hamburger" aria-label="Toggle Navigation">☰</button>
+        <nav id="menu" class="hidden">
+            <ul>
+                <li><a href="#" id="filter-home">Home</a></li>
+                <li><a href="#" id="filter-old">Old</a></li>
+                <li><a href="#" id="filter-new">New</a></li>
+                <li><a href="#" id="filter-large">Large</a></li>
+                <li><a href="#" id="filter-small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Temple Album</h2>
+        <section id="album">
+            <!-- Temple cards will be dynamically inserted here by JavaScript -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Madokuboba Dokubo | Rivers, Nigeria 
+            <br>Last Updated: <span id="lastModified"></span>
+        </p>
+    </footer>
+
+    <script>
+        // Update footer dynamically
+        document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
+</body>
+</html>
