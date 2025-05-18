@@ -1,19 +1,24 @@
 /* Base Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f9f9f9;
+    background-color: #F8F9FA;
 }
 
 /* Header */
 header {
-    background-color: #003366;
+    background-color: #4A6FA5;
     color: white;
+    margin: 0 auto;
     padding: 1rem 0;
     text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
 }
 
 nav ul {
@@ -35,7 +40,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffcc00;
+    color: #FF7E5F;
 }
 
 /* Main */
@@ -60,14 +65,14 @@ main {
 }
 
 .card h2 {
-    color: #003366;
+    color: #4A6FA5;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 10px 0;
-    background: #003366;
+    background: #4A6FA5;
     color: white;
     margin-top: 20px;
 }
