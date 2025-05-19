@@ -1,19 +1,12 @@
-// Responsive Navigation (Hamburger Menu)
-const hamburger = document.querySelector('#hamburger');
-const menu = document.querySelector('nav');
+// Hamburger menu functionality
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
 
-// Toggle menu visibility on hamburger click
 hamburger.addEventListener('click', () => {
-  menu.classList.toggle('visible'); // Toggle the visibility of the menu
-  hamburger.textContent = menu.classList.contains('visible') ? '✖' : '☰'; // Change button text
+    menu.classList.toggle('active');
+    hamburger.textContent = menu.classList.contains('active') ? '✕' : '☰';
 });
 
-// Footer Date
-const yearElement = document.querySelector('#year');
-const lastModifiedElement = document.querySelector('#lastModified');
-
-// Update to copyright year
-yearElement.textContent = new Date().getFullYear();
-
-// Update to last modified date
-lastModifiedElement.textContent = document.lastModified;
+// Footer dynamic content
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;

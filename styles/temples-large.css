@@ -1,30 +1,18 @@
-/* Larger Screen Styles */
-header {
-  justify-content: center;
-  gap: 2rem;
-}
-
-#album {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-}
-
-/* Media Query for Large Screens */
+/* Large View Styles */
 @media (min-width: 768px) {
-  /* Show menu items horizontally on larger screens */
-  nav ul {
-      display: flex;
-      gap: 1rem;
-  }
-
-  /* Hide the hamburger button on larger screens */
-  button#hamburger {
+  #hamburger {
       display: none;
+  }
+  
+  nav {
+      display: block;
+  }
+  
+  nav ul {
+      flex-direction: row;
+  }
+  
+  .gallery {
+      grid-template-columns: repeat(3, 1fr);
   }
 }
