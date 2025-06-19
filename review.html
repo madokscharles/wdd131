@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Submitted | Product Review</title>
+  <meta name="description" content="Thank you for your product review submission.">
+  <meta name="author" content="Madokuboba Dokubo">
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/form.js" defer></script>
+</head>
+<body onload="tallyReviews()">
+  <header>
+    <h1>Product Review</h1>
+  </header>
+  <main>
+    <section class="card" style="text-align: center; padding: 2rem;">
+      <h2>✅ Thank you!</h2>
+      <p>Your product review has been successfully submitted.</p>
+      <p><strong>Total Reviews Submitted from this browser:</strong></p>
+      <p id="reviews" style="font-size: 2rem; font-weight: bold; color: #2b6391;"></p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy;<span id="currentyear"></span> | Madokuboba Dokubo</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
