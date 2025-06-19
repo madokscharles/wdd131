@@ -9,11 +9,12 @@ const products = [
 ];
 
 function createProductList() {
+  if (!productSelect) return;
   products.forEach(p => {
     const opt = document.createElement("option");
-    opt.setAttribute("value", p.id);
-    opt.innerText = p.name;
-    productSelect?.appendChild(opt);
+    opt.value = p.id;
+    opt.textContent = p.name;
+    productSelect.appendChild(opt);
   });
 }
 createProductList();
@@ -22,6 +23,9 @@ function tallyReviews() {
   let count = Number(localStorage.getItem("tally")) || 0;
   count++;
   localStorage.setItem("tally", count);
+
   const counterDisplay = document.querySelector("#reviews");
-  if (counterDisplay) counterDisplay.innerText = count;
+  if (counterDisplay) {
+    counterDisplay.textContent = `You’ve submitted ${count} review(s).`;
+  }
 }
