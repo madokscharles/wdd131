@@ -1,0 +1,22 @@
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 20px;
+    padding: 0 1em;
+}
+h1, h2 {
+    color: #004e64;
+}
+.accent {
+    color: #f9a826;
+}
+.wireframe {
+    border: 2px dashed #004e64;
+    padding: 1em;
+    margin: 1em 0;
+    background-color: #f9f9f9;
+}
+.wireframe img {
+    width: 600px;
+}
