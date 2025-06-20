@@ -1,0 +1,61 @@
+/* Larger Screens (min-width: 768px) */
+@media (min-width: 768px) {
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  #nav-links {
+    display: flex !important;
+    gap: 1em;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2em;
+  }
+
+  .hero {
+  display: block;
+  text-align: center;
+}
+
+  .hero-image {
+    flex: 1;
+  }
+
+  .hero-text {
+    flex: 1;
+  }
+
+  .features {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+  }
+
+  .features article {
+    flex: 1;
+  }
+
+  .testimonial {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    gap: 2em;
+  }
+
+  .testimonial img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .testimonial div {
+    max-width: 500px;
+  }
+}
